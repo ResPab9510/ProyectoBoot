@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Busqueda</title>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <h3>WebScraping OCC Mundial</h3>
+        <br>
+        <br>
+        <h5>Busqueda de Empresa</h5>
+        <div>
+            <input type="text" placeholder="Buscar" autofocus required>
+            <input class="btn btn-primary" type="button" value="Buscar">
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <h5>Tabla de busqueda</h5>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Filrar
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Numero de vacantes</a></li>
+                  <li><a class="dropdown-item" href="#">Nombre de la empresa</a></li>
+                  <li><a class="dropdown-item" href="#">Fecha de consulta</a></li>
+                </ul>
+            </div>
+            <br>
+            <div class="table-responsive">
+                <table id="tabla" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Empresa</th>
+                            <th># Vacantes</th>
+                            <th>Fecha de consulta</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Telmex</td>
+                            <td>10</td>
+                            <td>10/05/2001</td>
+                        </tr>
+                        <tr>
+                            <td>Pemex</td>
+                            <td>50</td>
+                            <td>15/09/2021</td>
+                        </tr>
+                        <tr>
+                            <td>Jumex</td>
+                            <td>100</td>
+                            <td>25/11/2018</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
